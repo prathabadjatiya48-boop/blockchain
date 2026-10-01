@@ -13,4 +13,9 @@ contract StorageFactory{
         mumbai mysimStorage = listofsimplestorage[mumbaiidx];
         mysimStorage.store(number);
     }
+
+    function sfview(uint mumbaiidx) public view returns(uint){
+        mumbai mysimStorage = listofsimplestorage[mumbaiidx];
+        return mysimStorage.retrieve();
+    }
 }
